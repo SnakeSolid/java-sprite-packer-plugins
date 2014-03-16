@@ -46,7 +46,6 @@ public class ExampleExportPlugin implements ExportPlugin {
 					JOptionPane.PLAIN_MESSAGE);
 
 			return;
-		} else {
 		}
 
 		File dir = Dialogs.selectDirectory(parent);

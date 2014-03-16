@@ -17,7 +17,7 @@ import ru.snake.spritepacker.plugin.ImportPlugin;
 
 public class ExampleImportPlugin implements ImportPlugin {
 
-	private static final String NAME = "sample-plugin";
+	private static final String NAME = "sample-import-plugin";
 	private static final String MENU_ITEM_TEXT = "Sample import plugin...";
 
 	private static final int TEXTURE_SIZE = 64;

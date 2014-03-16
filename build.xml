@@ -18,6 +18,10 @@
 			<service type="ru.snake.spritepacker.plugin.ImportPlugin">
 				<provider classname="ru.snake.spritepacker.ExampleImportPlugin" />
 			</service>
+
+			<service type="ru.snake.spritepacker.plugin.ServicePlugin">
+				<provider classname="ru.snake.spritepacker.ExampleServicePlugin" />
+			</service>
 		</jar>
 	</target>
 </project>
