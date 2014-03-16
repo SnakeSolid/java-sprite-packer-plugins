@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+
+<project name="Sprite packer plugins example" default="serviceloader">
+	<property name="src.dir" location="src" />
+	<property name="build.dir" location="bin" />
+	<property name="jar.name" value="example.jar" />
+
+	<target name="clean">
+		<delete file="${jar.name}" />
+	</target>
+
+	<target name="serviceloader" depends="clean">
+		<jar destfile="${jar.name}" basedir="${build.dir}">
+			<service type="ru.snake.spritepacker.plugin.ExportPlugin">
+				<provider classname="ru.snake.spritepacker.ExampleExportPlugin" />
+			</service>
+
+			<service type="ru.snake.spritepacker.plugin.ImportPlugin">
+				<provider classname="ru.snake.spritepacker.ExampleImportPlugin" />
+			</service>
+		</jar>
+	</target>
+</project>
